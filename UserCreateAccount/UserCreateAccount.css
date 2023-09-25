@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'poppins';
+    ;
+}
+
+.forgotpass {
+    text-decoration: none;
+    color: #505050;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.login {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.submit {
+    font-size: 15px;
+    background-color: #2EB082;
+    padding: 4px 25px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.google-signin-button {
+    width: 100%;
+    border: 1px solid darkred;
+    color: black;
+    margin-top: 0px;
+    border-radius: 5px;
+}
+
+body {
+    background: linear-gradient(to right, #711717, #FDA700);
+}
+
+.btn {
+    width: 100%;
+    /* Set button width to 100% */
+    max-width: 100%;
+    /* Adjust the maximum width as needed */
+    border-radius: 5px;
+    background-color: #FDA700 !important;
+    padding: 3px;
+    font-size: 18px;
+    border: none;
+    margin-left: 5px !important;
+}
+
+.btn:hover {
+    opacity: 0.5 !important;
+}
+
+@media (max-width: 768px) {
+    .right {
+        margin-top: 20px !important;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .hello {
+        margin-left: 25px !important;
+    }
+}
+
+
+
+
+.img-fluid {
+    width: 100%;
+}
+
+#form3Example1c {
+    width: 100%;
+    margin-top: -40px;
+    border: 1px solid gray;
+    text-transform: capitalize;
+}
+
+#form3Example3c {
+
+    border: 1px solid gray;
+}
+
+.Welcome {
+    color: #711717;
+}
+
+.form-check-label {
+    font-size: 12px;
+}
