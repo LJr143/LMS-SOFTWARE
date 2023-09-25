@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.h3{
+    font-size: large;
+    font-weight: bold;
+}
+.bg-left {
+    height: 100vh; 
+}
+.bg-left img {
+    max-width: 150%;
+    max-height: 100%; 
+}
+
+.bg-image {
+    background-image: url('photo/Vector-red.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1; 
+}
+
+/*for responsive medium size*/
+@media (max-width: 768px) {
+    .col-md-7 {
+        width: 100%;
+    }
+}
+
+.glass-panel {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    height: 70%;
+}
+
+
+.usep {
+    max-width: 35%;
+    height: auto;
+    margin-bottom: -10px;
+    margin-top: 20px;
+}
+.mb-3 a{
+    text-decoration: none;
+    font-size: small;
+    color: black;
+}
+.mb-3 a:hover{
+    color: darkred;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%; 
+}
+
+.btn {
+    width: 100%; 
+    max-width: 200px; 
+    border-radius: 15px;
+}
+
+.google-signin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.google-signin-button {
+    font-size: small;
+    text-align: center;
+    padding: 4px 5px;
+    background-color: white;
+    width: 100%; 
+    max-width: 200px;
+    border: none; 
+    border-radius: 15px;
+    outline: none;
+}
+
+.google-logo {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px; 
+}
+
+.google-signin-button:hover {
+    background-color: maroon; 
+    color: white;
+}
+
+.btn,
+.google-signin-button {
+    margin-top: 20px; 
+    height: 33px;
+}
+
+@media (max-width: 768px) {
+    .bg-left {
+        display: none !important;
+    }
+
+ 
+    .bg-image {
+        background-image: url('photo/Vector-red.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .glass-panel {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+ #selectOption {
+    border-radius: 10px;
+    height: 30px;
+  }
+ 
+  
