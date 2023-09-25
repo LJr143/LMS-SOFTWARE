@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+  <link rel="stylesheet" href="AdminUpdateStudent.css" />
+  <link rel="stylesheet" href="AdminDashboard.css" />
+  <title>Admin Update Student</title>
+</head>
+
+<body>
+  <!-- top navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbarTop fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+        aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon " data-bs-target="#sidebar"></span>
+      </button>
+      <img src="photo/usep-logo.png" class="logo navbar-toggler-icon " style="width: 40px ;height:40px">
+      <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase  fw-bold px-3" href="#" style="color: black">Library
+        Mangement System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavBar"
+        aria-controls="topNavBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="topNavBar">
+        <form class="d-flex ms-auto my-3 my-lg-0">
+
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ms-2" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-person-fill text-dark " style="font-size: 24px;"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item custom-dropdown-item" href="#">My Profile</a></li>
+              <li><a class="dropdown-item custom-dropdown-item" href="#">Log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- top navigation bar -->
+
+
+
+  <!-- offcanvas -->
+  <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="sidebar" style="width: 220px;">
+    <div class="offcanvas-body p-0">
+      <nav class="navbar-dark">
+        <ul class="navbar-nav">
+          <li>
+            <div class="text-muted small fw-bold text-uppercase px-3 py-2">
+              USeP
+            </div>
+          </li>
+          <li>
+            <a href="#" class="nav-link px-3  mt-3">
+              <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+              <span>Dashboard </span>
+            </a>
+          </li>
+
+
+          </li>
+          <li>
+            <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#layouts">
+              <span class="me-2"><i class="bi bi-card-checklist"></i></span>
+              <span>Inventory</span>
+              <span class="ms-auto">
+                <span class="right-icon">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </span>
+            </a>
+            <div class="collapse" id="layouts">
+              <ul class="navbar-nav ps-3">
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><i class="bi bi-journal-plus"></i></span>
+                    <span>Add Book</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="nav-link px-3">
+              <span class="me-2"><i class="bi bi-person"></i></span>
+              <span>Students</span>
+            </a>
+          </li>
+
+          </li>
+          <li>
+            <a href="#" class="nav-link px-3">
+              <span class="me-2"><i class="bi bi-flag"></i></span>
+              <span>Reports</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link px-3">
+              <span class="me-2"><i class="bi bi-card-checklist"></i></span>
+              <span>Logs</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- offcanvas --> <!--Add book start-->
+  <main class="mt-5 pt-5 ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Student Management</h4>
+        </div>
+      </div>
+
+
+      <div class="row align-content-center justify-content-center">
+
+       
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+
+  <!--cATEGORY-->
+  
+
+
+
+  <main class="mt-3 p-4 bgoas">
+    <div class="container-fluid ">
+      <div class="row align-content-center justify-content-center">
+      <h5 class="fw-bold px-5">Update Student</h5>
+
+      <div class="col-md-3 SI">
+        <div class="box addbookImage align-content-center justify-content-center">
+            <img src="photo/avatar.png" width="220" height="220" id="Profile-Pic">
+            <br>
+            <!-- Hide the input visually while keeping it accessible -->
+            </div>
+    </div>
+
+
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-2">
+          <label for="validationCustom01" class="form-label">Student ID</label>
+          <input type="numeric" class="form-control" id="validationCustom01 " min="9" max="9"   placeholder="2021-00565" required>
+          <div class="invalid-feedback">
+            Please choose a student ID.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01"  required>
+          <div class="invalid-feedback">
+            Please type the first name.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" required>
+          <div class="invalid-feedback">
+            Please type the last name.
+          </div>
+        </div>
+        <div class="col-md-2">
+          <label for="validationCustom02" class="form-label">Middle Initial</label>
+          <input type="text" class="form-control" id="validationCustom02" required>
+          <div class="invalid-feedback">
+            Please type the middle initial .
+          </div>
+          </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Address</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid address.
+          </div>
+        </div>
+        <div class="col-md-2">
+          <label for="validationCustom01" class="form-label">Phone Number</label>
+          <input type="numeric" class="form-control"  id="validationCustom01" placeholder="091234567890" required>
+          <div class="invalid-feedback">
+            Please type the phone number.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Email</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control " id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Password</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="password" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  required>
+            <div class="invalid-feedback">
+               <h6>Password must contain the following:</h6>
+              <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+              <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+              <p id="number" class="invalid">A <b>number</b></p>
+              <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+          </div>
+        </div>
+   
+
+        <div class="col-12 mt-5">
+          <div class="form-check">
+            <input class="form-check-input bg-danger" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-content-center justify-content-center">
+      </div>
+        </div>
+        <div class="buttonContainer">
+          <button type="submit" class="clear">CLEAR</button>
+          <button type="submit" class="add">UPDATE</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </main>
+
+
+  </div>
+  </div>
+  </div>
+
+<!-- for password form validation-->
+  <script>
+    var myInput = document.getElementById("psw");
+    var letter = document.getElementById("letter");
+    var capital = document.getElementById("capital");
+    var number = document.getElementById("number");
+    var length = document.getElementById("length");
+    
+    // When the user clicks on the password field, show the message box
+    myInput.onfocus = function() {
+      document.getElementById("message").style.display = "block";
+    }
+    
+    // When the user clicks outside of the password field, hide the message box
+    myInput.onblur = function() {
+      document.getElementById("message").style.display = "none";
+    }
+    
+    // When the user starts to type something inside the password field
+    myInput.onkeyup = function() {
+      // Validate lowercase letters
+      var lowerCaseLetters = /[a-z]/g;
+      if(myInput.value.match(lowerCaseLetters)) {
+        letter.classList.remove("invalid");
+        letter.classList.add("valid");
+      } else {
+        letter.classList.remove("valid");
+        letter.classList.add("invalid");
+    }
+    
+      // Validate capital letters
+      var upperCaseLetters = /[A-Z]/g;
+      if(myInput.value.match(upperCaseLetters)) {
+        capital.classList.remove("invalid");
+        capital.classList.add("valid");
+      } else {
+        capital.classList.remove("valid");
+        capital.classList.add("invalid");
+      }
+    
+      // Validate numbers
+      var numbers = /[0-9]/g;
+      if(myInput.value.match(numbers)) {
+        number.classList.remove("invalid");
+        number.classList.add("valid");
+      } else {
+        number.classList.remove("valid");
+        number.classList.add("invalid");
+      }
+    
+      // Validate length
+      if(myInput.value.length >= 8) {
+        length.classList.remove("invalid");
+        length.classList.add("valid");
+      } else {
+        length.classList.remove("valid");
+        length.classList.add("invalid");
+      }
+    }
+    </script>
+
+
+
+
+<!-- Example starter JavaScript for disabling form submissions if there are invalid fields -->
+  <script>
+    
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    let ProfilePic = document.getElementById("Profile-Pic");
+    let InputFile = document.getElementById("input-file");
+
+    InputFile.onchange = function () {
+      ProfilePic.src = URL.createObjectURL(InputFile.files[0]);
+    }
+    var toggle = document.getElementById("toggle");
+    var bgred = document.getElementById("bgred");
+
+    toggle.onclick = function () {
+      bgred.classList.toggle('active');
+    }
+    // Get references to the photo and dropdown
+    const clickablePhoto = document.getElementById('clickable-photo');
+    const dropdown = document.querySelector('.dropdown');
+
+    // Add a click event listener to the photo
+    clickablePhoto.addEventListener('click', function () {
+      // Toggle the dropdown's visibility
+      if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+      } else {
+        dropdown.style.display = 'block';
+      }
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.addEventListener('click', function (event) {
+      if (!clickablePhoto.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+  </script>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+  <script src="./js/jquery-3.5.1.js"></script>
+  <script src="./js/jquery.dataTables.min.js"></script>
+  <script src="./js/dataTables.bootstrap5.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
