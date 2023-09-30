@@ -139,7 +139,7 @@
       <div class="col-md-2 mb-1 ">
         <div class="card  ">
           <div class="box addbook ">
-            <a href="../Admin/UpdateAddBook.html">UPDATE BOOK</a>
+            <a href="UpdateAddBook.php">UPDATE BOOK</a>
           </div>
 
         </div>
