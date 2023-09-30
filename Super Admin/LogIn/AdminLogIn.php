@@ -38,7 +38,7 @@
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="PASSWORD">
                     </div>
                     <div class="mb-3 ">
-                        <a href="../ForgotPassword/ForgotPasswod.html">Forgot Password?</a>
+                        <a href="../ForgotPassword/ForgotPasswod.php">Forgot Password?</a>
                     </div>
                     <div class="btn-container "> 
                         <button type="submit" class="btn btn-dark">LOGIN</button>

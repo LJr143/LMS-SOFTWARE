@@ -93,7 +93,7 @@
           </div>
         </li>
         <li>
-          <a href="#" class="nav-link px-3 text-white">
+          <a href="AdminAddStudent.php" class="nav-link px-3 text-white">
             <span class="me-2"><i class="bi bi-person"></i></span>
             <span>Students</span>
           </a>
