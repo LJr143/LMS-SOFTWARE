@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body,
+button {
+  font-family: poppins;
+  background-color: #f0f0f0;
+}
+
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+
+
+/*Modified css*/
+.offcanvas-body {
+  background-color: #711717 !important;
+}
+
+.navbarTop {
+  background-color: white;
+  line-height: 1;
+}
+
+
+
+
+.dropdown-toggle::after {
+  color: black !important;
+}
+
+
+
+.navbar-toggler {
+  background-color:  #711717 !important;
+}
+
+
+
+
+.logo {
+  margin-left: 10px;
+}
+
+
+.dropdown-item:hover {
+  background-color: #fd7e14;
+  color: white;
+
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #f0f0f0;
+  color: black !important;
+  box-shadow: 0px 1px 6px #f0f0f0;
+
+}
+
+.swal2-confirm {
+  margin-right: 30px;
+}
+
+.swal2-cancel {
+  margin-left: 50px;
+}
+
+
+.NumBook {
+  font-size: 2em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.book {
+  font-size: 50px;
+}
+
+
+
+.box2 {
+  background-color: white;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+
+.dropdown-item:hover {
+  background-color: #fd7e14;
+  color: white;
+
+}
