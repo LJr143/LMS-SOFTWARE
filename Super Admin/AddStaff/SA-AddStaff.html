@@ -72,14 +72,10 @@
           </li>
 
           <li>
-            <a class="nav-link px-3 sidebar-link text-white" data-bs-toggle="collapse" href="#layouts">
+            <a class="nav-link px-3 sidebar-link text-white" data-bs-toggle="collapse" href="../AddStaff/SA-AddStaff.html">
               <span class="me-2"><i class="bi bi-people-fill"></i></span>
               <span>Staff</span>
-              <span class="ms-auto">
-                <span class="right-icon">
-                  <i class="bi bi-chevron-down"></i>
-                </span>
-              </span>
+             
             </a>
             <div class="collapse" id="layouts">
               <ul class="navbar-nav ps-3">
