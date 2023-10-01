@@ -29,14 +29,14 @@
 <div class="d-flex container-fluid" >
 
     <div class="container-fluid col-md- d-flex justify-content-center align-content-center align-items-center" style=" min-height: 100vh; width: 100%; ">
-        <div class="container formBox" style="height: 600px; width: 500px; z-index: 1000"  >
+        <div class="container formBox" style="height: 450px; width: 350px; z-index: 1000"  >
             <form action="" style="padding: 10px 10px">
                 <div class="  p-2">
                     <div class=" d-flex justify-content-center align-items-center mb-3">
                         <img src= "../../images/usep-logo.png" style="width: 100px; height: 100px; display: block"  alt="">
                     </div>
 
-                    <select  name="" id="" style="height: 40px; width: 100%; padding: 0px 10px; border-radius: 5px">
+                    <select  name="" id="" >
                         <option value="">Select User Type</option>
                         <option value="">Librarian</option>
                         <option value="">Staff</option>
@@ -54,10 +54,11 @@
                 </div>
 
                 <div class="justify-content-center p-2">
-                    <button type="submit" class="btn btn-primary  p-2" style="width: 100%">Login</button>
+                    <button type="submit" class="btn btn-primary " style="width: 100%; font-size: 10px; height: 30px;">Login</button>
                 </div>
-                <div class="justify-content-center p-2">
-                    <button style="border: 1px solid black; width: 100%" type="button" class="btn btn-light p-2"><img style="width: 25px" src="../../images/google.png" alt=""> Login with Google</button>
+                <div class="d-flex justify-content-center p-2">
+                    <button style="border: 1px solid black; font-size: 10px;" type="button" class="btn btn-light p-2 justify-content-center">
+                        <img style="width: 14px" src="../../images/google.png" alt=""> Login with Google</button>
 
                 </div>
 
