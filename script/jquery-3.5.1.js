@@ -10794,7 +10794,7 @@ jQuery.type = toType;
 
 jQuery.now = Date.now;
 
-jQuery.isTel = function( obj ) {
+jQuery.isNumeric = function( obj ) {
 
 	// As of jQuery 3.0, isNumeric is limited to
 	// strings and numbers (primitives or objects)
