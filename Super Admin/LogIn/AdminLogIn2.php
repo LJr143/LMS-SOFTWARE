@@ -1,3 +1,21 @@
+<?php
+session_start();
+
+
+if(isset($_POST['submit'])){
+    $usertype = $_POST['usertype'];
+
+    if($usertype ==  "admin"){
+        header("Location: ../../Admin/AdminAddBook.php");
+    }else if ($usertype == "superAdmin"){
+        header("Location: ../AddStaff/SA-AddStaff2.php");
+    }
+
+    exit();
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -30,16 +48,16 @@
 
     <div class="container-fluid col-md- d-flex justify-content-center align-content-center align-items-center" style=" min-height: 100vh; width: 100%; ">
         <div class="container formBox" style="height: 450px; width: 350px; z-index: 1000"  >
-            <form action="" style="padding: 10px 10px">
+            <form action="" method="post" style="padding: 10px 10px">
                 <div class="  p-2">
                     <div class=" d-flex justify-content-center align-items-center mb-3">
                         <img src= "../../images/usep-logo.png" style="width: 100px; height: 100px; display: block"  alt="">
                     </div>
 
-                    <select  name="" id="" >
+                    <select  name="usertype" id="" >
                         <option value="">Select User Type</option>
-                        <option value="">Librarian</option>
-                        <option value="">Staff</option>
+                        <option value="superAdmin">Librarian</option>
+                        <option value="admin">Staff</option>
                     </select>
                 </div>
                 <div class="d-flex flex-wrap p-2" style=" height: 100%">
@@ -54,7 +72,7 @@
                 </div>
 
                 <div class="justify-content-center p-2">
-                    <button type="submit" class="btn btn-primary " style="width: 100%; font-size: 10px; height: 30px;">Login</button>
+                    <button type="submit" name="submit" class="btn btn-primary " style="width: 100%; font-size: 10px; height: 30px;">Login</button>
                 </div>
                 <div class="d-flex justify-content-center p-2">
                     <button style="border: 1px solid black; font-size: 10px;" type="button" class="btn btn-light p-2 justify-content-center">

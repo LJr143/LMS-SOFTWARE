@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root {
+    --text-color: #fff;
+    --bg-color: radial-gradient(circle at right top, #001946 , #08540e);
+    --second-bg-color: #22282f;
+    --main-color: #3968ED;
+    --other-color: #c3cad5;
+
+
+    --h1-font: 3rem;
+    --h2-font: 1.5rem;
+    --p-font: 0.8rem;
+
+}
+body {
+    /*background-image: url('../../images/Vector-red.png');*/
+    background-color: #524f4f;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: right;
+    background-size: contain;
+
+
+
+
+}
+.headerSection {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    background: transparent;
+    transition: all .50s ease;
+    background-color: red;
+    height: 50px;
+    background-color: #333; /* Dark background color */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add shadow to the header */
+
+}
