@@ -13,13 +13,13 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-5 bg-left d-flex align-items-center justify-content-center">
-            <img src="/images/photoshop.png"  alt="Left Image" class="img-fluid">
+            <img src="../../images/photoshop.png        "  alt="Left Image" class="img-fluid">
         </div>
         <div class="col-md-7 bg-image">
             <div class="glass-panel">
                 <form>
                     <div class="text-center mb-4">
-                        <img src="/images/usep-logo.png" alt="usepLogo" class="usep"><br>
+                        <img src="../../images/usep-logo.png" alt="usepLogo" class="usep"><br>
                         <br>
                         <div class="formLogIn">
                             <form id="selectuser "  action="#" method="POST">
@@ -38,7 +38,7 @@
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="PASSWORD">
                     </div>
                     <div class="mb-3 ">
-                        <a href="../ForgotPassword/ForgotPasswod.html">Forgot Password?</a>
+                        <a href="../ForgotPassword/ForgotPasswod.php">Forgot Password?</a>
                     </div>
                     <div class="btn-container "> 
                         <button type="submit" class="btn btn-dark">LOGIN</button>
@@ -46,7 +46,7 @@
 
                     <div class="google-signin-container">
                         <button class="google-signin-button" data-onsuccess="onSignIn">
-                            <img src="/images/google.png" alt="Google Logo" class="google-logo">
+                            <img src="../../images/google.png" alt="Google Logo" class="google-logo">
                             LOGIN WITH GOOGLE
                         </button>
                     </div>
