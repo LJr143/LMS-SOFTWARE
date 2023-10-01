@@ -18,22 +18,6 @@
     width: 100%;
 }
 
-.addbook a {
-    color: gray;
-    text-decoration: none;
-    font-size: 14px;
-    margin-left: 30px;
-
-
-}
-
-.addbook a:hover {
-    color: black;
-    text-decoration: underline #fda700;
-    letter-spacing: 1px;
-}
-
-
 .selectOption {
     color: darkred;
 }
@@ -197,12 +181,22 @@ textarea {
     display: none;
 }
 
-.bgoas {
-    background-color: white;
+.AddingForms {
+    background-color: rgb(242, 242, 242);
     margin-right: 15px;
 
 }
-
+.con {
+    background-color: white;
+}
+.txt button{
+    margin-top: 10px;
+}
+.txt h5{
+    margin-left: 100px;
+    position: relative;
+    bottom: 30px;
+}
 .Apassword {
     margin-top: 86px;
 }

@@ -10794,7 +10794,7 @@ jQuery.type = toType;
 
 jQuery.now = Date.now;
 
-jQuery.isNumeric = function( obj ) {
+jQuery.isTel = function( obj ) {
 
 	// As of jQuery 3.0, isNumeric is limited to
 	// strings and numbers (primitives or objects)
@@ -10870,14 +10870,3 @@ if ( typeof noGlobal === "undefined" ) {
 
 return jQuery;
 } );
-<<<<<<< HEAD
-=======
-
-/* clear button*/
-
-$(document).ready(function(){
-    $(".reset-btn").click(function(){
-        $("#addingforms").trigger("reset");
-    });
-});
->>>>>>> 83076218b338c5866b2dcb006382739054cbbc46
