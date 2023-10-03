@@ -103,7 +103,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <h4>Staff Management</h4>
+          <h4 class="fw-bold">Staff Management</h4>
         </div>
       </div>
 
@@ -148,6 +148,14 @@
         </div>
 
         <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-2">
+            <label for="validationCustom01" class="form-label">Staff ID</label>
+            <input type="numeric" class="form-control" id="validationCustom01 " min="9" max="9" placeholder="2021-00565"
+              required>
+            <div class="invalid-feedback">
+              Please choose a student ID.
+            </div>
+          </div>
           <div class="col-md-4">
             <label for="validationCustom01" class="form-label">First name</label>
             <input type="text" class="form-control text-capitalize" id="validationCustom01" required>
@@ -346,7 +354,7 @@
               form.classList.add('was-validated')
             }, false)
           })
-      })()
+      })
 
   </script>
 
