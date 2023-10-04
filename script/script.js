@@ -45,3 +45,40 @@ $(document).ready(function () {
     $(table).DataTable();
   });
 });
+
+/*Clear Button*/
+$(document).ready(function () {
+  $('#btClearAll').click(function () {
+
+      $('#AddStaff').find(':button').each(function () {
+          switch (this.type) {
+              case 'text':
+              case 'password':
+              case 'file':
+              case 'email':
+              case 'date':
+              case 'number':
+              case 'tel':
+                  $(this).val('');
+                  break;
+              case 'radio':
+                  this.checked = false;
+                  break;
+          }
+      });
+  });
+});
+
+const togglePassword = document
+            .querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+        togglePassword.addEventListener('click', () => {
+            // Toggle the type attribute using
+            // getAttribure() method
+            const type = password
+                .getAttribute('type') === 'password' ?
+                'text' : 'password';
+            password.setAttribute('type', type);
+            // Toggle the eye and bi-eye icon
+            this.classList.toggle('bi bi-eye');
+        });

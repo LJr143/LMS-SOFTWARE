@@ -10870,14 +10870,3 @@ if ( typeof noGlobal === "undefined" ) {
 
 return jQuery;
 } );
-<<<<<<< HEAD
-=======
-
-/* clear button*/
-
-$(document).ready(function(){
-    $(".reset-btn").click(function(){
-        $("#addingforms").trigger("reset");
-    });
-});
->>>>>>> 83076218b338c5866b2dcb006382739054cbbc46

@@ -18,6 +18,22 @@
     width: 100%;
 }
 
+.addbook a {
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 30px;
+
+
+}
+
+.addbook a:hover {
+    color: black;
+    text-decoration: underline #fda700;
+    letter-spacing: 1px;
+}
+
+
 .selectOption {
     color: darkred;
 }
@@ -88,14 +104,28 @@ textarea {
 
 .buttonContainer {
     display: flex;
-    margin-top: 15px;
+    margin-top: 50px;
     font-size: 15px;
     justify-content: flex-end;
-    margin-right: 50px;
-    /* Align content to the right */
-    padding: 10px;
-    /* Add padding for spacing */
+    margin-right: 5px;
+   
 }
+
+@media (max-width: 768px) {
+    .buttonContainer {
+      justify-content: center;
+    }
+  }
+
+  
+
+  
+
+
+
+
+
+
 
 .clear,
 .add {
@@ -137,6 +167,7 @@ textarea {
     /* Adjust this value to control the spacing */
 }
 
+
 .col-md-3 .custom-width h6 {
     margin-top: 20px;
     /* Adjust this value to control the spacing */
@@ -160,7 +191,7 @@ textarea {
 
 
 .SI img {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 0px;
     border-radius: 50%;
 }
@@ -175,32 +206,45 @@ textarea {
     cursor: pointer;
     margin-left: 60px;
     font-size: 13px;
-    margin-bottom: 20px;
 }
 
 .SI input {
     display: none;
 }
 
-.AddingForms {
-    background-color: rgb(242, 242, 242);
-    margin-right: 15px;
-
-}
-.con {
+.bgoas {
     background-color: white;
-    border-radius: 3%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-right: 15px;
+    width: 60%;
+    position: absolute;
+    right: 10px;
+    
 
 }
-.txt button{
-    margin-top: 10px;
+
+
+.btngroup .btn-group-vertical .btn:hover {
+    background-color: #fda700; /* Change to your desired hover color */
+  }  
+  
+
+.btngroup{
+    margin-right: 15px;
+    width: 80%;
+    position: absolute;
+    left: 0px;
+    
 }
-.txt h5{
-    margin-left: 100px;
-    position: relative;
-    bottom: 30px;
+
+.btn{
+    text-align: left;
+   
 }
+
+
+
+
+
 .Apassword {
     margin-top: 86px;
 }
@@ -272,3 +316,51 @@ textarea {
         margin-top: -30px !important;
     }
 }
+
+/* button group */
+.vertical-button-group .btn {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Optional: Adjust the button styling as needed */
+  .vertical-button-group .btn {
+    width: 30%; /* Make the buttons fill the container width */
+  }
+
+  /* Optional: Add some spacing between the buttons */
+  .vertical-button-group .btn:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  /* Profile Details CSS */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    
+  }
+  .AdminName, .AdminEmail, .role {
+    line-height: 19px;
+  }
+
+  .AdminEmail{
+font-style: italic;
+  }
+  .profile-subdetails{
+    text-align: left;
+    flex-direction: column;
+    margin-top: 10px;
+    line-height: 30px;
+    
+  }
+
+  .Name, .Add, .Phone {
+    line-height: 19px;
+  }
