@@ -103,7 +103,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <h4>Staff Management</h4>
+          <h4>My Profile</h4>
         </div>
       </div>
 
