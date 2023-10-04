@@ -8,9 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="../../css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <link rel="stylesheet" href="../../css/dataTables.bootstrap5.min.css" />
-  <link rel="stylesheet" href="../../css/SuperAdminAddStaff.css" />
+  <link rel="stylesheet" href="../../css/SA-ChangePassword.css" />
   <link rel="stylesheet" href="../../css/AdminDashboard.css" />
   <title>Library Management System</title>
 </head>
@@ -106,171 +107,106 @@
           <h4 class="fw-bold">My Profile</h4>
         </div>
       </div>
-
-
-      <div class="row align-content-center justify-content-center">
-
-
+ <!--Button group-->
+ <main class="mt-3 p-4 btngroup">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="btn-group-vertical mb-3" role="group" aria-label="Button group">
+        <button type="button" class="btn btn-light">Edit Profile</button>
+        <button type="button" class="btn btn-light">Change Password</button>
       </div>
     </div>
-
-
-    </div>
-    </div>
-  </main>
-
-  <!--cATEGORY-->
-
-
-
-
-  <main class="mt-3 p-4 Addingforms">
+  </div>
+</main>
+ <!--Form group -->
+ <main class="mt-3 p-4 bgoas">
     <div class="container-fluid ">
-      <div class="row con align-content-center justify-content-center">
-        <div class="row txt ">
-        <div class="col ">
-      <button class="btn btn-lg"><i class="bi bi-arrow-left"></i></button>
-        <h5 class="fw-bold px-2 align-content-center justify-content-center">Add Admin</h5>
-       </div>
-       </div>
-       <div id="AddStaff">
-       <div class="row align-content-center justify-content-center">
-        <div class="col-md-3 SI">
-          <div class="box addbookImage align-content-center justify-content-center">
-            <img src="../../images/avatar.png" width="220" height="220" id="Profile-Pic">
-            <br>
-            <!-- Hide the input visually while keeping it accessible -->
-            <label for="input-file" class="fw-bold mt-3 ">Add Image</label>
-            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="visually-hidden">
-
-          </div>
-        </div>
-        </div>
-
+      <div class="row align-content-center justify-content-center">
+        <h5 class="fw-bold px-2  image">Change Password</h5>
         <form class="row g-3 needs-validation" novalidate>
-          <div class="col-md-2">
-            <label for="validationCustom01" class="form-label">Staff ID</label>
-            <input type="numeric" class="form-control" id="validationCustom01 " min="9" max="9" placeholder="2021-00565"
-              required>
-            <div class="invalid-feedback">
-              Please choose a student ID.
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="validationCustom01" class="form-label">First name</label>
-            <input type="text" class="form-control text-capitalize" id="validationCustom01" required>
-            <div class="invalid-feedback">
-              Please type the first name.
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="validationCustom02" class="form-label">Last name</label>
-            <input type="text" class="form-control text-capitalize" id="validationCustom02" required>
-            <div class="invalid-feedback">
-              Please type the last name.
-            </div>
-          </div>
-          <div class="col-md-2">
-            <label for="validationCustom02" class="form-label">Middle Initial</label>
-            <input type="text" class="form-control text-capitalize" id="validationCustom02" required>
-            <div class="invalid-feedback">
-              Please type the middle initial .
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="validationCustomUsername" class="form-label">Username</label>
-            <div class="input-group has-validation">
-              <input type="text" class="form-control " id="validationCustomUsername" aria-describedby="inputGroupPrepend"
-                required>
-              <div class="invalid-feedback">
-                Please choose a username.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <label for="validationCustom03" class="form-label">Address</label>
-            <input type="text" class="form-control text-capitalize" id="validationCustom03" required>
-            <div class="invalid-feedback">
-              Please provide a valid address.
-            </div>
-          </div>
-          <div class="col-md-2">
-            <label for="validationCustom01" class="form-label">Phone Number</label>
-            <input type="tel" class="form-control" id="validationCustom01" maxLength="11" minLength="11" pattern="^\d{4}-\d{3}-\d{4}$" placeholder="0912-3456-7890" required>
-            <div class="invalid-feedback">
-              Please type the phone number.
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="validationCustomUsername" class="form-label">Email</label>
-            <div class="input-group has-validation">
-              <!--<span class="input-group-text" id="inputGroupPrepend"></span>-->
-              <input type="text"  class="form-control " id="validationCustomUsername"
-                aria-describedby="inputGroupPrepend" required>
-              <div class="invalid-feedback">
-                Please choose a username.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="validationCustomUsername" class="form-label">Password</label>
-            <div class="input-group has-validation">
-              <!--<span class="input-group-text" id="inputGroupPrepend">@</span> -->
-              <input type="password" class="form-control" id="password" name="password"
-                aria-describedby="inputGroupPrepend" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                required>
-                <span class="input-group-text">
-                  <i class="bi bi-eye-slash " id="togglePassword"></i>
-                </span>
-                  
-              <div class="invalid-feedback">
-                <h6>Password must contain the following:</h6>
-                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-                <p id="number" class="invalid">A <b>number</b></p>
-                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-              </div>
-            </div>
-          </div>
+
+        
+        <div class="col-md-7">
+  <label for="validationCustom03" class="form-label">Current Password</label>
+  <div class="input-group">
+    <input type="password" class="form-control" id="validationCustom03" required>
+    <button class="btn btn-outline-secondary toggle-password" type="button" id="togglePassword">
+      <i class="fas fa-eye-slash"></i>
+    </button>
+  </div>
+  <div class="invalid-feedback">
+    Please provide a strong password.
+  </div>
+</div> 
+       
+          <div class="col-md-7">
+  <label for="validationCustom03" class="form-label">New Password</label>
+  <div class="input-group">
+    <input type="password" class="form-control" id="validationCustom03" required>
+    <button class="btn btn-outline-secondary toggle-password" type="button" id="togglePassword">
+      <i class="fas fa-eye-slash"></i>
+    </button>
+  </div>
+  <div class="invalid-feedback">
+    Please provide a strong password.
+  </div>
+</div> 
+
+<div class="col-md-7">
+  <label for="validationCustom03" class="form-label">Confirm New Password</label>
+  <div class="input-group">
+    <input type="password" class="form-control" id="validationCustom03" required>
+    <button class="btn btn-outline-secondary toggle-password" type="button" id="togglePassword">
+      <i class="fas fa-eye-slash"></i>
+    </button>
+  </div>
+  <div class="invalid-feedback">
+    Please provide a strong password.
+  </div>
+</div> 
+         
 
 
-          <div class="col-12 mt-5">
-            <div class="form-check">
-              <input class="form-check-input bg-danger" type="checkbox" value="" id="invalidCheck" required>
-              <label class="form-check-label" for="invalidCheck">
-                Agree to terms and conditions
-              </label>
-              <div class="invalid-feedback">
-                You must agree before submitting.
-              </div>
-            </div>
-          </div>
-      
       <div class="row align-content-center justify-content-center">
       </div>
+    </div>
+    
     <div class="buttonContainer">
-      <button type="submit" id="btClearAll" class="clear">CLEAR</button>
-      <button type="submit" id="Submit" class="add">ADD</button>
-    </div>
-    </div>
+      <button type="submit" class="clear">CLEAR</button>
+      <button type="submit" class="add">CONFIRM</button>
     </div>
     </form>
     </div>
     </div>
-    </div>
   </main>
+  </div>
+  </div>
+  </div>
+      
+  <script>
+  const togglePassword = document.querySelectorAll(".toggle-password");
+  togglePassword.forEach(function (toggle) {
+    toggle.addEventListener("click", function () {
+      const password = toggle.previousElementSibling;
+      if (password.type === "password") {
+        password.type = "text";
+        toggle.innerHTML = '<i class="fas fa-eye"></i>';
+      } else {
+        password.type = "password";
+        toggle.innerHTML = '<i class="fas fa-eye-slash"></i>';
+      }
+    });
+  });
+</script>  
+       
 
-
-  </div>
-  </div>
-  </div>
+  
 
 
 
 
    <!-- SCRIPT
-  //   for password form validation-->
+  //   for password form validation
   
   <script>
     var myInput = document.getElementById("psw");
@@ -330,9 +266,9 @@
         length.classList.add("invalid");
       }
     }
-    //     </script>
+    //     </script> -->
 
-   <!-- Example starter JavaScript for disabling form submissions if there are invalid fields -->
+   <!-- Example starter JavaScript for disabling form submissions if there are invalid fields 
   
   <script>
 
@@ -354,7 +290,7 @@
               form.classList.add('was-validated')
             }, false)
           })
-      })
+      }) -->
 
   </script>
 
