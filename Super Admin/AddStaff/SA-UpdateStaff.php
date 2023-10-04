@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="../../css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -60,9 +61,9 @@
       <nav class="navbar-dark">
         <ul class="navbar-nav">
           <li>
-            <!-- <div class="text-muted usep fw-bold text-uppercase px-3 py-2">
-              University of Southeastern Philippines
-            </div> -->
+           <div class="text-muted usep fw-bold px-3 py-2" style="color: white;">
+              USeP
+            
           </li>
           <li>
             <a href="#" class="nav-link px-3 text-white  mt-5">
@@ -125,9 +126,15 @@
 
   <main class="mt-3 p-4 bgoas">
     <div class="container-fluid ">
-      <div class="row align-content-center justify-content-center">
-        <h5 class="fw-bold px-2  image">Update Admin</h5>
-
+      <div class="row con align-content-center justify-content-center">
+        <div class="row txt ">
+          <div class="col ">
+        <button class="btn btn-lg"><i class="bi bi-arrow-left"></i></button>
+          <h5 class="fw-bold px-2 align-content-center justify-content-center">Add Admin</h5>
+         </div>
+         </div>
+         <div id="AddStaff">
+          <div class="row align-content-center justify-content-center">
         <div class="col-md-3 SI">
           <div class="box addbookImage align-content-center justify-content-center">
             <img src="../../images/avatar.png" width="220" height="220" id="Profile-Pic">
@@ -137,6 +144,7 @@
             <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="visually-hidden">
 
           </div>
+        </div>
         </div>
 
 
@@ -151,21 +159,21 @@
           </div>
           <div class="col-md-4">
             <label for="validationCustom01" class="form-label">First name</label>
-            <input type="text" class="form-control" id="validationCustom01" required>
+            <input type="text" class="form-control text-capitalize" id="validationCustom01" required>
             <div class="invalid-feedback">
               Please type the first name.
             </div>
           </div>
           <div class="col-md-4">
             <label for="validationCustom02" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="validationCustom02" required>
+            <input type="text" class="form-control text-capitalize" id="validationCustom02" required>
             <div class="invalid-feedback">
               Please type the last name.
             </div>
           </div>
           <div class="col-md-2">
             <label for="validationCustom02" class="form-label">Middle Initial</label>
-            <input type="text" class="form-control" id="validationCustom02" required>
+            <input type="text" class="form-control text-capitalize" id="validationCustom02" required>
             <div class="invalid-feedback">
               Please type the middle initial .
             </div>
@@ -182,14 +190,14 @@
           </div>
           <div class="col-md-6">
             <label for="validationCustom03" class="form-label">Address</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
+            <input type="text" class="form-control text-capitalize" id="validationCustom03" required>
             <div class="invalid-feedback">
               Please provide a valid address.
             </div>
           </div>
           <div class="col-md-2">
             <label for="validationCustom01" class="form-label">Phone Number</label>
-            <input type="numeric" class="form-control" id="validationCustom01" placeholder="091234567890" required>
+            <input type="tel" class="form-control" id="validationCustom01" maxLength="11" minLength="11" pattern="^\d{4}-\d{3}-\d{4}$" placeholder="0912-345-6789" required>
             <div class="invalid-feedback">
               Please type the phone number.
             </div>
@@ -197,7 +205,7 @@
           <div class="col-md-4">
             <label for="validationCustomUsername" class="form-label">Email</label>
             <div class="input-group has-validation">
-              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <!--<span class="input-group-text" id="inputGroupPrepend">@</span>-->
               <input type="text" class="form-control " id="validationCustomUsername"
                 aria-describedby="inputGroupPrepend" required>
               <div class="invalid-feedback">
@@ -208,11 +216,14 @@
           <div class="col-md-4">
             <label for="validationCustomUsername" class="form-label">Password</label>
             <div class="input-group has-validation">
-              <span class="input-group-text" id="inputGroupPrepend">@</span>
-              <input type="password" class="form-control" id="validationCustomUsername"
-                aria-describedby="inputGroupPrepend" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                required>
+             <!-- <span class="input-group-text" id="inputGroupPrepend">@</span>-->
+             <input type="password" class="form-control" id="password" name="password"
+             aria-describedby="inputGroupPrepend" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+             title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+             required>
+             <span class="input-group-text">
+               <i class="bi bi-eye-slash " id="togglePassword"></i>
+             </span>
               <div class="invalid-feedback">
                 <h6>Password must contain the following:</h6>
                 <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
@@ -235,15 +246,16 @@
               </div>
             </div>
           </div>
-      </div>
+      
       <div class="row align-content-center justify-content-center">
       </div>
-    </div>
+    
     <div class="buttonContainer">
       <button type="submit" class="clear">CLEAR</button>
       <button type="submit" class="add">UPDATE</button>
     </div>
     </form>
+    </div>
     </div>
     </div>
   </main>
@@ -341,7 +353,7 @@
               form.classList.add('was-validated')
             }, false)
           })
-      })()
+      })
 
   </script>
   <script src="../../script/AdminAddStudent.js"></script>

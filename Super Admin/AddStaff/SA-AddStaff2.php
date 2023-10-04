@@ -62,4 +62,4 @@ if(isset($_POST['submit'])){
 
 
 <script src = "script.js">
-    </html>
+    
