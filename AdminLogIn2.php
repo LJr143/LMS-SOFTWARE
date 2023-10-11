@@ -24,7 +24,7 @@ if(isset($_POST['submit'])){
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>USeP LMS Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Super Admin/LogIn/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -36,7 +36,7 @@ if(isset($_POST['submit'])){
 <div class="container-fluid col-md-12" style=" height: 100%; width: 100%; overflow: hidden; background-color: rgba(173,173,173,0.03) " >
 <div class="container-fluid bg-white col-md-12 headerSection">
     <div class="container-fluid d-flex align-items-center" style="" >
-        <img src= "../../images/usep-logo.png" style="width: 45px; height: 45px" alt="">
+        <img src= "images/usep-logo.png" style="width: 45px; height: 45px" alt="">
         <div class="container-fluid d-flex  align-items-center align-content-center" >
             <p style="margin: 10px 10px; font-weight: bold">USeP Library Management System</p>
         </div>
@@ -51,7 +51,7 @@ if(isset($_POST['submit'])){
             <form action="" method="post" style="padding: 10px 10px">
                 <div class="  p-2">
                     <div class=" d-flex justify-content-center align-items-center mb-3">
-                        <img src= "../../images/usep-logo.png" style="width: 100px; height: 100px; display: block"  alt="">
+                        <img src= "images/usep-logo.png" style="width: 100px; height: 100px; display: block" alt="">
                     </div>
 
                     <select  name="usertype" id="" >
@@ -76,7 +76,7 @@ if(isset($_POST['submit'])){
                 </div>
                 <div class="d-flex justify-content-center p-2">
                     <button style="border: 1px solid black; font-size: 10px;" type="button" class="btn btn-light p-2 justify-content-center">
-                        <img style="width: 14px" src="../../images/google.png" alt=""> Login with Google</button>
+                        <img style="width: 14px" src="images/google.png" alt=""> Login with Google</button>
 
                 </div>
 
@@ -94,5 +94,5 @@ if(isset($_POST['submit'])){
 </body>
 
 
-<script src = "script.js">
+<script src = "Super Admin/LogIn/script.js">
     </html>
