@@ -116,28 +116,30 @@
             SEARCH BY
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Educational</a>
-            <a class="dropdown-item" href="#">Filipiniana</a>
-            <a class="dropdown-item" href="#">Fictional</a>
-            <a class="dropdown-item" href="#">Video Tapes</a>
-            <a class="dropdown-item" href="#">publish and Dissertation</a>
+            <a class="dropdown-item" href="#">Student Name</a>
+            <a class="dropdown-item" href="#">Gender</a>
+            <a class="dropdown-item" href="#">Course</a>
+            <a class="dropdown-item" href="#">Year Level</a>
+
           </div>
         </div>
         
-        <div class="col-4 col-md-3 col-xl-3 col-xs-4 col-lg-4 col-sm-4 mt-4 ms-2">
+        <div class="col-4 col-md-3 col-xl-3 col-xs-4 col-lg-4 col-sm-4 mt-4 ms-2"
           <div class="input-group searchBar col-sm-3">
             <!--SEARCH BAR-->
             <div class="input-group-text border-end-0 bg-transparent">
-              <i class="bi bi-search"></i>
+<!--              <i class="bi bi-search " style="margin-top: 5px"></i>-->
             </div>
-            <input type="text" class="form-control border-start-0" id="searchInput" placeholder="  Search...">
+            <input type="text" class="form-control border-start-0 " style="margin-top: 10px" id="searchInput" placeholder="  Search...">
           </div>
         </div>
       
        <!--CREATE ADMIN/STAFF BUTTON-->
       <div class=" col-md-12 col-xs-5 col-sm-5 col-lg-11 col-xl-11 ">
         <div class="createButton col-lg-4 ">
-          <button id="createAdminButton" class="btn btn-warning">ADD STUDENT</button>
+          <button id="createAdminButton" class="btn btn-warning ">ADD STUDENT </button>
+             
+            <a href="#"> <img src="../../images/icons8-excel-48.png" style="width: 35px; margin-left:35px "></a>
         </div>
       </div>
       </div>
@@ -154,7 +156,7 @@
               <th scope="col" class="cell-padding1"></th>
               <th scope="col" class="cell-padding1">
                 <div class="d-flex align-items-center"> Student Name <img class="imgSort1" src="../../images/icons8-sort-50.png"
-                    id="employeeSort"></div>
+                    id="employeeSort" ></div>
               </th>
               <th scope="col" class="cell-padding1">
                 <div class="d-flex align-items-center">Gender<img class="imgSort2" src="../../images/icons8-sort-50.png"
@@ -177,10 +179,10 @@
               <td class="cell-padding"><input type="checkbox" class="individualCheckbox" id="checkbox1"></td>
               <td class="cell-padding"><img class="imgProf" src="../../images/avatar.png" style="width: 30px; height: 30px;">
               </td>
-              <td class="cell-padding">Joanna Doe</td>
+              <td class="cell-padding">Sheena Mae Pagas</td>
               <td class="cell-padding">F</td>
               <td class="cell-padding">BSIT</td>
-              <td class="cell-padding">1st Year</td>
+              <td class="cell-padding">3rd Year</td>
               <td class="cell-padding2">
                 <div class="btn-group" role="group">
                   <a href="#" class="btn custom-btn"> <img class="imgmng" src="../../images/icons8-edit-50.png"
@@ -199,10 +201,10 @@
               <td class="cell-padding"><input type="checkbox" class="individualCheckbox" id="checkbox1"></td>
               <td class="cell-padding"><img class="imgProf" src="../../images/avatar.png" style="width: 30px; height: 30px;">
               </td>
-              <td class="cell-padding">Joanna Doe</td>
+              <td class="cell-padding">Carla Zozobrado</td>
               <td class="cell-padding">F</td>
-              <td class="cell-padding">BSIT</td>
-              <td class="cell-padding">1st Year</td>
+              <td class="cell-padding">BSABE</td>
+              <td class="cell-padding">2nd Year</td>
               <td class="cell-padding2">
                 <div class="btn-group" role="group">
                   <a href="#" class="btn custom-btn"> <img class="imgmng" src="../../images/icons8-edit-50.png"
@@ -223,7 +225,7 @@
               </td>
               <td class="cell-padding">John Doe</td>
               <td class="cell-padding">M</td>
-              <td class="cell-padding">BSIT</td>
+              <td class="cell-padding">BSED     </td>
               <td class="cell-padding">3rd Year</td>
               <td class="cell-padding2">
                 <div class="btn-group" role="group">
@@ -243,9 +245,9 @@
               <td class="cell-padding"><input type="checkbox" class="individualCheckbox" id="checkbox1"></td>
               <td class="cell-padding"><img class="imgProf" src="../../images/avatar.png" style="width: 30px; height: 30px;">
               </td>
-              <td class="cell-padding">Elena Whiskey</td>
+              <td class="cell-padding">Gwynn Palsson</td>
               <td class="cell-padding">F</td>
-              <td class="cell-padding">BSIT</td>
+              <td class="cell-padding">BTVTED  </td>
               <td class="cell-padding">2nd Year</td>
               <td class="cell-padding2">
                 <div class="btn-group" role="group">
@@ -262,13 +264,57 @@
               </td>
             </tr>
             <tr class="row1" id="row-spacing">
+                <td class="cell-padding"><input type="checkbox" class="individualCheckbox" id="checkbox1"></td>
+                <td class="cell-padding"><img class="imgProf" src="../../images/avatar.png" style="width: 30px; height: 30px;">
+                </td>
+                <td class="cell-padding">Elena Whiskey</td>
+                <td class="cell-padding">F</td>
+                <td class="cell-padding">BSIT</td>
+                <td class="cell-padding">2nd Year</td>
+                <td class="cell-padding2">
+                    <div class="btn-group" role="group">
+                        <a href="#" class="btn custom-btn"> <img class="imgmng" src="../../images/icons8-edit-50.png"
+                                                                 alt="Image Button">
+                        </a>
+                        <img class="imgmngline" src="../../images/icons8-line-50.png">
+                        <a href="#" class="btn custom-btn" id="deleteUserButton4"> <img class="imgmng"
+                                                                                        src="../../images/icons8-delete-50.png" alt="Image Button"> </a>
+                        <img class="imgmngline" src="../../images/icons8-line-50.png">
+                        <a href="#" class="btn custom-btn" id="suspendUserButton4"> <img class="imgmng"
+                                                                                         src="../../images/icons8-cancel-50.png" alt="Image Button"> </a>
+                    </div>
+                </td>
+            </tr>
+            <tr class="row1" id="row-spacing">
+                <td class="cell-padding"><input type="checkbox" class="individualCheckbox" id="checkbox1"></td>
+                <td class="cell-padding"><img class="imgProf" src="../../images/avatar.png" style="width: 30px; height: 30px;">
+                </td>
+                <td class="cell-padding">Hannagene Daluro</td>
+                <td class="cell-padding">F</td>
+                <td class="cell-padding">BSABE</td>
+                <td class="cell-padding">4th Year</td>
+                <td class="cell-padding2">
+                    <div class="btn-group" role="group">
+                        <a href="#" class="btn custom-btn"> <img class="imgmng" src="../../images/icons8-edit-50.png"
+                                                                 alt="Image Button">
+                        </a>
+                        <img class="imgmngline" src="../../images/icons8-line-50.png">
+                        <a href="#" class="btn custom-btn" id="deleteUserButton4"> <img class="imgmng"
+                                                                                        src="../../images/icons8-delete-50.png" alt="Image Button"> </a>
+                        <img class="imgmngline" src="../../images/icons8-line-50.png">
+                        <a href="#" class="btn custom-btn" id="suspendUserButton4"> <img class="imgmng"
+                                                                                         src="../../images/icons8-cancel-50.png" alt="Image Button"> </a>
+                    </div>
+                </td>
+            </tr>
+            <tr class="row1" id="row-spacing">
               <td class="cell-padding"><input type="checkbox" class="individualCheckbox" id="checkbox1"></td>
               <td class="cell-padding"><img class="imgProf" src="../../images/avatar.png" style="width: 30px; height: 30px;">
               </td>
               <td class="cell-padding">Albert Tessla</td>
               <td class="cell-padding">M</td>
-              <td class="cell-padding">BSIT</td>
-              <td class="cell-padding">2nd Year</td>
+              <td class="cell-padding">BSEDF</td>
+              <td class="cell-padding">5th Year</td>
               <td class="cell-padding2">
                 <div class="btn-group" role="group">
                   <a href="#" class="btn custom-btn"> <img class="imgmng" src="../../images/icons8-edit-50.png"
@@ -373,7 +419,7 @@
         title: 'ARE YOU SURE?',
         text: `Do you really want to delete ${selectedCount} selected items?`,
         icon: null,
-        iconHtml: '<div style="background-color: white; padding: 21px; "><img src="photo/icons8-warning-100.png" style="width: 90px;"></div>',
+        iconHtml: '<div style="background-color: white; padding: 21px; "><img src="../../images/icons8-delete-50.png" style="width: 90px;"></div>',
         showCancelButton: true,
         cancelButtonText: 'CANCEL',
         cancelButtonColor: '#e3e6e9',
@@ -404,7 +450,7 @@
         title: 'ARE YOU SURE?',
         text: `Do you really want to suspend ${selectedCount} selected items?`,
         icon: null,
-        iconHtml: '<div style="background-color: white; padding: 30px; "><img src="photo/icons8-warning-100.png" style="width: 90px;"></div>',
+        iconHtml: '<div style="background-color: white; padding: 30px; "><img src="../../images/icons8-cancel-50.png" style="width: 90px;"></div>',
         showCancelButton: true,
         cancelButtonText: 'CANCEL',
         cancelButtonColor: '#e3e6e9',
