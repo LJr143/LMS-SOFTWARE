@@ -73,6 +73,7 @@ body {
     height: 25px;
     border-radius: 5px;
     padding: 10px;
+    font-size: 10px;
 }
 .formBox label {
     margin-top: 10px;

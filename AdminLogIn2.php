@@ -1,18 +1,8 @@
 <?php
 session_start();
+//error_reporting(0);
+include 'config/db_config.php';
 
-
-if(isset($_POST['submit'])){
-    $usertype = $_POST['usertype'];
-
-    if($usertype ==  "admin"){
-        header("Location: ../../Admin/AdminAddBook.php");
-    }else if ($usertype == "superAdmin"){
-        header("Location: ../AddStaff/SA-AddStaff2.php");
-    }
-
-    exit();
-}
 
 ?>
 
@@ -48,21 +38,21 @@ if(isset($_POST['submit'])){
 
     <div class="container-fluid col-md- d-flex justify-content-center align-content-center align-items-center" style=" min-height: 100vh; width: 100%; ">
         <div class="container formBox" style="height: 450px; width: 350px; z-index: 1000"  >
-            <form action="" method="post" style="padding: 10px 10px">
+            <form action="#" method="post" style="padding: 10px 10px">
                 <div class="  p-2">
                     <div class=" d-flex justify-content-center align-items-center mb-3">
-                        <img src= "images/usep-logo.png" style="width: 100px; height: 100px; display: block" alt="">
+                        <img src= "img/usep-logo.png" style="width: 100px; height: 100px; display: block" alt="">
                     </div>
 
-                    <select  name="usertype" id="" >
+                    <select  name="usertype" id="usertype" >
                         <option value="">Select User Type</option>
-                        <option value="superAdmin">Librarian</option>
-                        <option value="admin">Staff</option>
+                        <option value="Librarian">Librarian</option>
+                        <option value="Staff">Staff</option>
                     </select>
                 </div>
                 <div class="d-flex flex-wrap p-2" style=" height: 100%">
                     <label for="inputUsername" class="form-label">Username</label>
-                    <input type="password" id="inputUsername" class="form-control" aria-describedby="passwordHelpBlock">
+                    <input type="text" id="inputUsername" class="form-control" aria-describedby="passwordHelpBlock">
                     <label for="inputPassword" class="form-label">Password</label>
                     <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
 
@@ -72,7 +62,7 @@ if(isset($_POST['submit'])){
                 </div>
 
                 <div class="justify-content-center p-2">
-                    <button type="submit" name="submit" class="btn btn-primary " style="width: 100%; font-size: 10px; height: 30px;">Login</button>
+                    <button type="submit" name="submit" id="login" class="btn btn-primary " style="width: 100%; font-size: 10px; height: 30px;">Login</button>
                 </div>
                 <div class="d-flex justify-content-center p-2">
                     <button style="border: 1px solid black; font-size: 10px;" type="button" class="btn btn-light p-2 justify-content-center">
@@ -89,10 +79,101 @@ if(isset($_POST['submit'])){
 
 
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script>
+    $(document).ready(function() {
+        $(function (){
+            $("#login").click(function (event) {
+                $("#login").prop("disabled", true);
+                var useradmin = $("#usertype").val();
+                var username = $("#inputUsername").val();
+                var password = $("#inputPassword").val();
 
+                $.ajax({
+                    type: "POST",
+                    url: "operations/AjaxLogin.php",
+                    data: {
+                        useradmin: useradmin,
+                        username : username,
+                        password : password
+                    },
+                    dataType: 'json',
+
+                    success: function (response){
+                        $("#login").prop("disabled", false);
+                        console.log(response);
+                        var len = response.length;
+                        for( var i = 0; i<len; i++){
+                            var login_result = response[i]['login_result'];
+                            if(login_result == "success"){
+
+                                window.location = 'admin/please_wait.php';
+
+                            }else if(login_result == "wrong_password"){
+                                Swal.fire({
+                                    title: 'Login Failed!',
+                                    text: "Incorrect username or password",
+                                    icon: 'error',
+                                    confirmButtonColor: '#A24D4D',
+                                    confirmButtonText: 'Try Again',
+                                }).then((result) => {
+                                    if (result.value) {
+                                        // location.reload();
+                                    }
+                                })
+                            }else if(login_result == "librarian_success"){
+
+                                window.location = '../AddStaff/SA-AddStaff2.php';
+
+                            }else if(login_result == "empty_fields"){
+                                Swal.fire({
+                                    title: 'Login Failed!',
+                                    text: "Some fields are empty. Make sure to fill in all fields.",
+                                    icon: 'error',
+                                    confirmButtonColor: '#A24D4D',
+                                    confirmButtonText: 'Try Again!'
+                                }).then((result) => {
+                                    if (result.value) {
+                                        // location.reload();
+                                    }
+                                })
+                            }else if(login_result == "staff_success"){
+
+                                window.location = '../../Admin/AdminAddBook.php';
+
+                            }
+                            else{
+                                Swal.fire({
+                                    title: 'Login Failed!',
+                                    text: "Account does not exist in our database!",
+                                    icon: 'error',
+                                    confirmButtonColor: '#A24D4D',
+                                    confirmButtonText: 'Try Again!'
+                                }).then((result) => {
+                                    if (result.value) {
+                                        // location.reload();
+                                    }
+                                })
+                            }
+
+                        }
+                    },
+                    error: function() {
+                        // Re-enable the login button in case of an error
+                        $("#login").prop("disabled", false);
+                    }
+
+                })
+            })
+        })
+    })
+</script>
 
 </body>
 
 
 <script src = "Super Admin/LogIn/script.js">
     </html>
+
+
