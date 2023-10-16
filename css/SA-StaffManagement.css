@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body,
+button {
+  font-family: 'poppins';
+  background-color: #f0f0f0;
+}
+
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+
+/*Modified css*/
+.offcanvas-body {
+  background-color: #711717 !important;
+}
+
+.navbarTop {
+  background-color: white;
+  line-height: 1;
+}
+
+.dropdown-toggle::after {
+  color: black !important;
+}
+
+.NumBook {
+  font-size: 2em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.book {
+  font-size: 50px;
+}
+
+
+
+.box2 {
+  background-color: white;
+}
+
+.navbar-toggler {
+  background-color: black !important;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+
+.dropdown-item:hover {
+  background-color: #fd7e14;
+  color: white;
+
+}
+
+
+/* content staff managemennnnt */
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#dropdown {
+  padding: 50px;
+  font-size: 90px;
+}
+
+/* Add space between the thead and tbody */
+#staffDataTable thead {
+  padding-bottom: 90% !important;
+  /* Adjust the value as needed for the desired spacing */
+}
+
+#staffDataTable tbody {
+  margin-top: 10px !important;
+  width: 70% !important;
+  /* Adjust the value as needed for the desired spacing */
+}
+
+/* Style the dropdown button (optional) */
+#dropdown:focus {
+  outline: none;
+  /* Remove the default focus outline */
+  border: 2px solid #007bff;
+  /* Add a border when focused (change color as needed) */
+}
+
+.rowButton {
+  height: 5%;
+}
+
+#staffDataTable {
+  border-collapse: separate;
+  border-spacing: 0 7px;
+  margin-top: -1% !important;
+  margin-left: -2% !important;
+}
+
+/* Custom CSS to remove border between table head and table body */
+#staffDataTable thead tr:first-child th {
+  border-top: none;
+}
+
+
+#ManageStaffContent {
+  font-weight: bold;
+  font-size: 25px !important;
+  color: #434343;
+  margin-top: -30px;
+  margin-left: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#ManageStaffContent {
+  font-weight: bold;
+  font-size: 20px;
+  color: #434343;
+  margin-top: -50px;
+  margin-left: 15%;
+}
+
+.rowStaff {
+  height: auto;
+  margin-top: 1%;
+  margin-left: -3% !important;
+}
+
+#dropdownMenuButton {
+  border: solid 1px black;
+  margin-left: 15%;
+  margin-top: 10%;
+}
+
+.container-fluid {
+  margin: 0;
+}
+
+
+.createButton {
+  border-radius: 29px;
+  margin-top: -4%;
+  margin-left: 78%;
+  color: #ffffff !important;
+  
+}
+
+#createAdminButton {
+  border-radius: 29px;
+  color: #ffff;
+  font-family: Poppins, sans-serif !important;
+  font-weight: semibold !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.rowTitle {
+  height: 3%;
+  margin-top: 3%;
+
+
+}
+
+.imgSort1 {
+  max-width: 9%;
+  height: auto;
+  margin-left: 7px;
+}
+
+.imgSort2 {
+  max-width: 12%;
+  height: auto;
+  margin-left: 7px;
+}
+
+.imgSort3 {
+  max-width: 12%;
+  height: auto;
+  margin-left: 7px;
+}
+
+.row1 .checkbox {
+  margin-left: 20px;
+  background-color: #f0f0f0;
+
+
+}
+
+.row1 {
+  box-shadow: 0px 0px 4px;
+  height: 43px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.row0 {
+  height: 43px;
+  margin: auto;
+  margin-top: 1%;
+  padding-left: 20px;
+  margin-bottom: -2%;
+}
+
+
+.colEmp {
+  margin-left: -6%;
+}
+
+.colEmployee {
+  margin-left: -3%;
+}
+
+.colRol {
+  margin-left: 7%;
+}
+
+.colRole {
+  margin-left: 5%;
+}
+
+.colStatus {
+  margin-left: -2%;
+}
+
+
+body {
+  background-color: #f3f2f2;
+}
+
+.imgProf {
+  size: -10px !important;
+
+}
+
+/* Custom CSS to control the size of the button images */
+.custom-btn {
+  padding: 0;
+  /* Remove default padding */
+}
+
+.custom-btn .imgmng {
+  width: 20px;
+  /* Set the desired width */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.imgmngline {
+  max-width: 10%;
+
+}
+
+.colMng {
+  margin-left: 7%;
+}
+
+.colManage {
+  margin-left: 5%;
+}
+
+.my-swal-popup {
+  width: 424px;
+  height: 335px;
+  background-color: #ffffff;
+}
+
+.my-swal-popup1 {
+  width: 530px;
+  height: 420px;
+  background-color: #ffffff;
+}
+
+/* Custom CSS for the title text */
+.my-swal-title {
+  font-family: 'Poppins', semibold;
+  color: #711717;
+  font-size: 25px;
+  margin-top: 2px;
+
+}
+
+.my-swal-popup .my-swal-content {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #050404;
+  font-size: 12px;
+}
+
+.my-swal-popup1 .my-swal-content1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #050404;
+  font-size: 12px;
+
+}
+
+/* Custom CSS for the cancel button */
+.my-swal-popup .my-cancel-button {
+  background-color: #e3e6e9;
+  color: rgb(8, 1, 1);
+  border-radius: 15px;
+}
+
+/* Custom CSS for the confirm button */
+.my-swal-popup .my-confirm-button {
+  background-color: #711717;
+  color: white;
+  border-radius: 15px;
+}
+
+/* Custom CSS for the cancel button */
+.my-swal-popup1 .my-cancel-button1 {
+  background-color: #e3e6e9;
+  color: rgb(8, 1, 1);
+  border-radius: 15px;
+}
+
+/* Custom CSS for the confirm button */
+.my-swal-popup1 .my-confirm-button1 {
+  background-color: #711717;
+  color: white;
+  border-radius: 15px;
+}
+
+.col-md-3 .input-group {
+  margin-left: -250%;
+  margin-top: 1% !important;
+}
+
+.input-group .form-control {
+  background: transparent;
+  /* Remove the background color */
+  border: none;
+  /* Remove the border */
+  border-bottom: 1px solid #000;
+  /* Add an underline */
+  border-radius: 0;
+  /* Remove any border radius */
+  padding-left: 5px;
+  /* Remove left padding */
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da; /* You can set this to your desired border color */
+}
+/* Custom CSS to style the search icon */
+.input-group-text {
+  background: transparent;
+  /* Remove background */
+  border: none;
+  /* Remove border */
+  padding: 0;
+  /* Remove padding */
+}
+
+/* Add margins to the Log Out and Cancel buttons */
+.swal2-confirm {
+  margin-right: 30px;
+  /* Adjust the right margin as needed */
+}
+
+.swal2-cancel {
+  margin-left: 50px;
+  /* Adjust the left margin as needed */
+
+}
+
+.deleteButton {
+  margin-left: 58% !important;
+  margin-top: 2% !important;
+}
+
+.suspendButton {
+  margin-left: -1%;
+  margin-top: 2% !important;
+ 
+}
+#deleteallAdminButton{
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+#suspendallAdminButton{
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/*sorting*/
+th.sorting:before,
+th.sorting_asc:before,
+th.sorting_desc:before {
+  content: none !important;
+}
+
+th.sorting:after,
+th.sorting_asc:after,
+th.sorting_desc:after {
+  content: "" !important;
+}
+
+
+.row1 .cell-padding {
+  padding-left: 50px;
+  /* Adjust the left padding as needed */
+  padding-right: 10px;
+  /* Adjust the right padding as needed */
+}
+
+.cell-padding1 {
+  padding-left: 50px !important;
+  /* Adjust the left padding as needed */
+  padding-right: 10px;
+  /* Adjust the right padding as needed */
+}
+
+.cell-padding2 {
+  padding-left: 35px !important;
+  /* Adjust the left padding as needed */
+  padding-right: 10px;
+  /* Adjust the right padding as needed */
+}
+
+/* Default styles for larger screens */
+#createAdminButton {
+  width: auto;
+  /* Set the button width to auto */
+}
+.cell-padding1 {
+  position: relative;
+}
+
+.hover-text {
+  position: absolute;
+  opacity: 5px;
+  top: -14px;
+  left: 17px;
+  display: none;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.selectAllCheckbox:hover + .hover-text {
+  display: inline;
+}
+
+/* Media queries xl */
+@media (max-width: 1399px) {
+  .colManage {
+    margin-left: 2% !important;
+  }
+
+  .searchBar {
+    margin-left: 3% !important;
+  }
+}
+
+/* Media queries lg */
+@media (max-width: 1199px) {
+  body {
+    overflow: auto !important;
+  }
+
+  .colManage {
+    margin-left: 1% !important;
+  }
+  .searchBar {
+    margin-left: -3% !important;
+    margin-top: 7% !important;
+  }
+  .rowStaff {
+    height: 2%;
+    margin-top: 7%;
+    margin-left: -20% !important;
+  }
+
+  .createButton {
+    margin-left: 70% !important;
+    margin-top: -5% !important;
+  }
+
+  .rowStaff {
+    height: 50%;
+    margin-top: 5%;
+    margin-left: -2% !important;
+  }
+
+
+  .deleteButton {
+    margin-left: 50% !important;
+  }
+
+  .suspendButton {
+    margin-left: 70% !important;
+    margin-top: -5% !important; 
+  }
+}
+
+
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+
+/* Media queries md */
+@media (max-width: 991px) {
+  .col-md-12 {
+    margin-left: 25px;
+  }
+
+  .deleteButton {
+
+    margin-top: -3%;
+    margin-left: 53% !important;
+  }
+
+  .suspendButton {
+    margin-top: 2% !important;
+    margin-left: -4% !important;
+  }
+  
+  .rowStaff {
+    height: 50%;
+    margin-top: 5%;
+    margin-left: -2% !important;
+  }
+
+  .searchBar {
+    margin-left: -1% !important;
+  }
+}
+
+/* Media queries sm */
+@media (max-width: 767px)  {
+  #createAdminButton {
+    width: auto;
+    margin-left: -280px !important;
+  }
+  main {
+    width: 80%;
+  } body {
+    overflow: auto !important;
+  }
+  
+  .rowStaff {
+    height: -10% !important;
+    margin-top: 5%;
+    margin-left: 80%;
+  }
+
+  .staffDataTable {
+    overflow: auto !important;
+  }
+
+  .searchBar {
+    margin-left: 10% !important;
+  }
+.createButton {
+  margin-left: 350% !important;
+  margin-top: -8% !important;
+}
+ 
+
+  #ManageStaffContent {
+    height: 20%;
+    margin-top: -15% !important;
+    margin-left: -60% !important;
+  }
+
+  .colManage {
+    margin-left: -3% !important;
+  }
+  .deleteButton {
+    margin-top: -3%;
+    margin-left: 42% !important;
+  }
+
+  .suspendButton {
+    margin-top: 2% !important;
+    margin-left: -10% !important;
+  }
+
+  .card-body{
+    width: 150%;
+  }
+}
+
+/* Media queries xs */
+@media (max-width: 575px) {
+  #createAdminButton {
+    width: auto;
+    /* Add some margin at the top for spacing */
+    margin-left: -200px !important;
+  }
+  .rowStaff {
+    height: -10% !important;
+    margin-top: 15%;
+    margin-left: 80%;
+  }
+  body {
+    overflow: auto !important;
+  }
+  main {
+    width: 90%;
+  }
+  .searchBar {
+    margin-left: 40% !important;
+  }
+  .createButton {
+    margin-left: 140% !important;
+    margin-top: -8% !important;
+  }
+  #ManageStaffContent {
+    height: 20%;
+    margin-top: 90% !important;
+    margin-left: -780% !important;
+  }
+  .deleteButton {
+    margin-left: 55% !important;
+  }
+
+  .suspendButton {
+    margin-left: 95% !important;
+    margin-top: -18% !important;
+  }
+  @media (max-width: 575.98px) {
+    .deleteButton, .suspendButton {
+      /* Adjust the column sizes for extra small screens */
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+  .createbtn{
+    margin-left: 130%;
+  }
+}
+
+
+
+.pagination-container {
+  font-family: poppins, sans-serif;
+  font-weight:400;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.pagination {
+    position: relative;
+}
+
+.pagination a {
+    position: relative;
+    display: inline-block;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 16px 10px;
+}
+
+.pagination a:before {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #2c3e50;
+    border-radius: 24px;
+    transform: scale(0);
+    transition: all 0.2s;
+}
+
+.pagination a:hover,
+.pagination-active {
+    color: #fff;
+}
+
+.pagination a:hover:before,
+.pagination-active:before {
+    transform: scale(1);
+}
+
+.pagination-active {
+    color: #fff;
+}
+
+.pagination-newer {
+    margin-right: 50px;
+}
+
+.pagination-older {
+    margin-left: 50px;
+}

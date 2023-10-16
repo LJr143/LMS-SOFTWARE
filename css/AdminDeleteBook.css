@@ -1,0 +1,250 @@
+/* Style for clickable text */
+.clickable-text {
+    color: #88898a; /* Blue color for links, change as needed */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 13px;
+
+}
+.clickable-text2 {
+    color: #070707; /* Blue color for links, change as needed */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 13px;
+    margin-left: -80px !important;
+
+}
+.clickable-text3 {
+    color: #88898a; /* Blue color for links, change as needed */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 13px;
+    margin-left: -145px !important;
+
+}
+.clickable-text:hover {
+    color: #000000; /* Darker blue color on hover, change as needed */
+}
+.clickable-text2:hover {
+    color: #000000; /* Darker blue color on hover, change as needed */
+}
+.clickable-text3:hover {
+    color: #000000; /* Darker blue color on hover, change as needed */
+}
+/* Optional: Adjust spacing for smaller screens */
+@media (max-width: 768px) {
+    .clickable-text {
+        margin-bottom: 20px;
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 15%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    max-width: 50%;
+    height: 65%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Style for checkboxes and boxes with shadows */
+#checkbox-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 18%;
+    width: 80%;
+    height: 100% !important;
+}
+#buttons-container {
+    background-color: white;
+    padding:1px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 18%;
+    width: 80%;
+}
+.conatiner #boxes-container{
+    width: 30%;
+}
+.box {
+    display: inline-block;
+    width: 320px; /* Specify the width of each box */
+    vertical-align: top;
+  }
+.box {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 20%;
+    width: 89%;
+}
+
+/* Style for the text inside the clickable boxes */
+.box-text {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Optional: Adjust spacing for smaller screens */
+@media (max-width: 768px) {
+    .clickable-box {
+        margin-bottom: 20px;
+    }
+
+    .box {
+        margin-bottom: 10px;
+    }
+}
+
+.title{
+    margin-top: 5% !important;
+}
+.btitle{
+    font-weight: bold;
+    margin-left: 18%;
+}
+
+.cell-padding1 {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+}
+
+/* Optional: Add some spacing between the checkbox and text */
+.checkbox {
+    margin-right: 5px; /* Adjust as needed */
+    margin-top: -16px !important;
+}
+.hover-text {
+    align-self: center; /* Vertically center the text */
+}
+.input-group-text1 {
+    background: transparent;
+    /* Remove background */
+    border: none;
+    /* Remove border */
+    padding: 0;
+    /* Remove padding */
+  }
+  /* Remove border for the search input */
+.input-group-text1.border-end-0 {
+    border: none;
+}
+
+/* Remove input field border */
+.form-control.border-start-0 {
+    border: none;
+    box-shadow: none; /* Remove any box shadow if present */
+    font-size: 12px;
+    border-bottom: 1px solid #000; /* Add a bottom border line */
+    border-radius: 0; /* Remove any border-radius */
+}
+
+/* Optional: Add background color to the input field */
+.form-control.border-start-0 {
+    background-color: transparent; /* Change to your preferred background color */
+}
+.clear{
+    background-color: #9c9b98;
+    border: none;
+}
+.delete{
+    background-color: #fda700;
+    border: none;
+}
+.buttonContainer {
+    display: flex;
+    margin-top: 15px;
+    font-size: 15px;
+    justify-content: flex-end;
+    margin-right: 70px;
+    /* Align content to the right */
+    padding: 10px;
+    /* Add padding for spacing */
+}
+.bookTitle{
+    font-size: 15px;
+    font-weight: bold;
+}
+.additionalText{
+    font-size: 10px !important;
+}
+.img{
+    display: flex; 
+    flex-direction: column; 
+    align-content:   start; 
+}
+.description{
+    display: flex; 
+    flex-direction: column;
+     align-content  : end; 
+     text-align: start;
+}
+.last-option {
+    border: 1px solid #000; /* You can adjust the border style and color as needed */
+    padding: 5px; /* Add some padding to make it look better */
+}
+#SearchBy{
+    font-size: 10px !important;
+}
+.box #info{
+    float:right;  
+    font-size: 11px; 
+    margin-left: -200px;
+}
+   
+.small-letters{
+    border: 1px solid #03d10d; /* Set the border style, width, and color */
+    border-radius: 13%;
+    padding: 0%; /* Add padding to create some space between the text and the border */
+    width: 80px; /* Set the width of the text box */
+    padding-left: 3%;
+    color: #03d10d;
+    font-style: italic;
+   
+}
+
+.book-copies{
+    font-size: 11px;
+}
+.description{
+    font-size: 11px;
+}
+
+.small-icon {
+    font-size: 11px !important; /* Adjust the font size as needed */
+}
+.search{
+    margin-left: -45px !important;
+    margin-top: -8px;
+}
+.excel{
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+.import{
+    margin-left: 89%;
+    margin-top: -3%;
+}
