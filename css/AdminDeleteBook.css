@@ -37,36 +37,6 @@
         margin-bottom: 20px;
     }
 }
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin-left: 15%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-}
-
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 44%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    max-width: 50%;
-    height: 65%;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
 /* Style for checkboxes and boxes with shadows */
 #checkbox-container {
     background-color: white;
@@ -213,7 +183,11 @@
     font-size: 11px; 
     margin-left: -200px;
 }
-   
+.box #info1{
+    float:right;  
+    font-size: 11px; 
+    margin-left: -250px;
+}
 .small-letters{
     border: 1px solid #03d10d; /* Set the border style, width, and color */
     border-radius: 13%;
@@ -248,3 +222,45 @@
     margin-left: 89%;
     margin-top: -3%;
 }
+.wishlist-button {
+    background-color: transparent;
+    border: 1px solid #711717;
+    color: #711717;
+    border-radius: 3px;
+    width: 100px;
+    margin-top: -5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  .wishlist{
+    background-color: transparent;
+    border: 1px solid #711717;
+    color: #711717;
+    border-radius: 3px;
+    width: 40px;
+    margin-top: -5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+
+
+  .wishlist-button:hover {
+    background-color: #711717;
+    color: white;
+    border-color: #711717 ;
+    border-radius: 5px;
+  }
+  .wishlist:hover {
+    background-color: #711717;
+    color: white;
+    border-color: #711717 ;
+    border-radius: 5px;
+  }
