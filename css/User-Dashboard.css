@@ -1,3 +1,7 @@
+body {
+    background-color: #f0f0f0;
+}
+
 .custom-container {
     width: 180px;
     height: 270px;
@@ -111,13 +115,102 @@
 }
 
 .dropdown-item:hover {
-    background-color: #711717;
+    background-color: #fd7e14;
     color: white;
 }
 
+.navbarTop {
+    background-color: white;
+}
 
-@media screen and (max-width: 568px) {
-    .profile {
-        top: 0px !important;
-    }
+
+td {
+    vertical-align: middle !important;
+}
+
+/* CSS for Star Rating */
+
+.rating label {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: center;
+    color: #f5a623;
+}
+
+.rating label:before {
+    content: "\2605";
+}
+
+.rating input:checked~label:before {
+    content: "\2605";
+    color: #f5a623;
+}
+
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.smiley-label {
+    position: relative;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.smiley-label.selected {
+    background-color: #f5a623;
+
+}
+
+.stars {
+    position: absolute;
+    top: -50px;
+    left: 10%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+
+/* Add background color to smiley icons */
+.smiley-label i {
+    padding: 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.feedback-title {
+    color: #711717;
+}
+
+.swal2-confirm {
+    background-color: #711717 !important;
+    color: white !important;
+    border: none !important;
+    padding: 5px 20px !important;
+}
+
+.swal2-cancel {
+    background-color: #d3d3d3 !important;
+    color: black !important;
+    padding: 5px 20px !important;
+}
+
+.navbarTop {
+    height: 50px !important;
+}
+
+.navbar-dark .navbar-toggler {
+    color: white;
 }

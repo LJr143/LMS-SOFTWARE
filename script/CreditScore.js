@@ -1,59 +1,115 @@
- 
-  document.addEventListener("DOMContentLoaded", function () {
-    const searchForm = document.getElementById("searchForm");
-    const searchInput = document.getElementById("searchInput");
-    const searchButton = document.getElementById("searchButton");
-    const bookItems = document.querySelectorAll(".totalU");
 
-    // Function to filter book items based on search input
-    function filterBooks() {
-      const searchText = searchInput.value.toLowerCase();
-      bookItems.forEach((item) => {
-        const title = item.querySelector("h6.text-start").textContent.toLowerCase();
-        if (title.includes(searchText)) {
-          item.style.display = "block"; // Show matching items
-        } else {
-          item.style.display = "none"; // Hide non-matching items
+    $(function() {
+
+    class GaugeChart {
+        constructor(element, params) {
+            this._element = element;
+            this._initialValue = params.initialValue;
+            this._higherValue = params.higherValue;
+            this._title = params.title;
+            this._subtitle = params.subtitle;
         }
-      });
+
+        _buildConfig() {
+            let element = this._element;
+
+            return {
+                value: this._initialValue,
+                valueIndicator: {
+                    color: 'darkred'
+                },
+
+                geometry: {
+                    startAngle: 180,
+                    endAngle: 360
+                },
+
+                scale: {
+                    startValue: 0,
+                    endValue: this._higherValue,
+                    customTicks: [0, 250, 500, 780, 1050, 1300, 1560],
+                    tick: {
+                        length: 8
+                    },
+
+                    label: {
+                        font: {
+                            color: '#87959f',
+                            size: 9,
+                            family: '"Open Sans", sans-serif'
+                        }
+                    }
+                },
+
+
+
+                title: {
+                    verticalAlignment: 'bottom',
+                    text: this._title,
+                    font: {
+                        family: '"Open Sans", sans-serif',
+                        color: 'red',
+                        size: 18
+                    },
+
+                    subtitle: {
+                        text: this._subtitle,
+                        font: {
+                            family: '"Open Sans", sans-serif',
+                            color: 'darkred',
+                            weight: 700,
+                            size: 28
+                        }
+                    }
+                },
+
+
+
+                onInitialized: function() {
+                    let currentGauge = $(element);
+                    let circle = currentGauge.find('.dxg-spindle-hole').clone();
+                    let border = currentGauge.find('.dxg-spindle-border').clone();
+
+                }
+            };
+
+
+        }
+
+        init() {
+            $(this._element).dxCircularGauge(this._buildConfig());
+        }
     }
 
-    // Add an event listener to the search button
-    searchButton.addEventListener("click", function (e) {
-      e.preventDefault();
-      filterBooks();
-    });
 
-    // Add an event listener to the search input for real-time filtering
-    searchInput.addEventListener("input", filterBooks);
-  });
+    $(document).ready(function() {
 
-  document.addEventListener("DOMContentLoaded", function () {
-  const homeButton = document.getElementById("homeButton");
-
-  // Add the 'active' class to the button
-  if (homeButton) {
-    homeButton.classList.add("active");
-  }
-});
-// Get the canvas element
-var ctx = document.getElementById("myPieChart").getContext('2d');
-
-// Data for the pie chart
-var data = {
-    labels: ["Label 1", "Label 2", "Label 3", "Label 4", "Label 5" ],
-    datasets: [{
-        data: [10, 20, 10, 20, 40], // Adjust the values as needed
-        backgroundColor: ["#dc3545","#fd7e14","#ffc107", "#0d6efd", "#198754"], // Colors for the sections
-    }]
+    $('.gauge').each(function(index, item) {
+    let params = {
+    initialValue: 780,
+    higherValue: 1560,
+    title: `Excellent`,
+    subtitle: '780 '
 };
 
-// Create the pie chart
-var myPieChart = new Chart(ctx, {
-    type: 'pie',
-    data: data,
-    options: {
-        responsive: true,
-    }
+
+    let gauge = new GaugeChart(item, params);
+    gauge.init();
 });
+
+    $('#random').click(function() {
+
+    $('.gauge').each(function(index, item) {
+    let gauge = $(item).dxCircularGauge('instance');
+    let randomNum = Math.round(Math.random() * 1560);
+    let gaugeElement = $(gauge._$element[0]);
+
+    gaugeElement.find('.dxg-title text').last().html(`${randomNum} ºC`);
+    gauge.value(randomNum);
+});
+});
+});
+
+});
+
 
