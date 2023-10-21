@@ -1,0 +1,64 @@
+body {
+        background-color: #f0f0f0;
+    }
+
+    .offcanvas-body {
+        background-color: white !important;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: black !important;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        background-color: #711717;
+        width: 100% !important;
+        color: white !important;
+    }
+
+    .dropdown-toggle::after {
+        color: orange !important;
+    }
+
+    .selectOption {
+        font-size: 13px !important;
+        width: 200px !important;
+        height: 35px !important;
+    }
+
+    .minimize-button {
+        width: 60px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        color: black;
+        font-size: 13px;
+    }
+
+    .minimize-button:hover {
+        background-color: #711717;
+        color: white;
+    }
+
+
+    .navbar-toggler {
+        background-color: #711717 !important;
+    }
+
+    .dropdown-item:hover {
+        background-color: #fd7e14;
+        color: white;
+    }
+
+    .navbarTop {
+        background-color: white;
+    }
+    .import{
+    margin-left: 89%;
+    margin-top: -3%;
+}
+    .excel{
+     width: 27px;
+     height: 27px;
+    }
+
