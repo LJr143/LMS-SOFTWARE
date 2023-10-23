@@ -1,0 +1,141 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.custom-container {
+    width: 480px;
+    height: 380px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.offcanvas-body {
+    background-color: white !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #711717;
+    width: 100% !important;
+    color: white !important;
+}
+
+.dropdown-toggle::after {
+    color: orange !important;
+}
+
+.selectOption {
+    font-size: 13px !important;
+    width: 200px !important;
+    height: 35px !important;
+}
+
+.minimize-button {
+    width: 60px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 13px;
+}
+
+.minimize-button:hover {
+    background-color: #711717;
+    color: white;
+}
+
+.wishlist-button {
+    background-color: transparent;
+    border: 1px solid #711717;
+    color: #711717;
+    border-radius: 3px;
+    width: 100px;
+    margin-top: -5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.wishlist {
+    background-color: transparent;
+    border: 1px solid #711717;
+    color: #711717;
+    border-radius: 3px;
+    width: 40px;
+    margin-top: -5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+
+.wishlist-button:hover {
+    background-color: #711717;
+    color: white;
+    border-color: #711717;
+    border-radius: 5px;
+}
+
+.wishlist:hover {
+    background-color: #711717;
+    color: white;
+    border-color: #711717;
+    border-radius: 5px;
+}
+
+.new-button {
+    background-color: orange;
+    color: white;
+    padding: 3px 15px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 12px;
+    border: none;
+}
+
+.custom-container {
+    position: relative;
+}
+
+.navbar-toggler {
+    background-color: #711717 !important;
+}
+
+.dropdown-item:hover {
+    background-color: #fd7e14;
+    color: white;
+}
+
+.navbarTop {
+    background-color: white;
+}
+.avatar{
+    margin-top: 10px;
+    height: 150px;
+    width: 170px;
+    margin-left: 50px;
+}
+.profile-details {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .name{
+    position: absolute;
+    bottom: 10rem;
+}
