@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.leftContent {
+    font-family: poppins, sans-serif;
+    background-color: #711717;
+    height: 565px;
+    color: #ffffff;
+}
+
+.title {
+    font-size: 20px;
+    margin-top: 35px;
+    font-weight: bold;
+    margin-left: 20%;
+}
+
+.menu {
+    margin-top: 30px;
+}
+
+.rightContent {
+    font-family: poppins, sans-serif;
+    height: 565px;
+}
+
+.form {
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: bold;
+    margin-left: 43%;
+}
+.form-control {
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: #6c757d;
+  }
+
+  #description{
+    resize: none;
+  }
+  .help-form{
+    margin-left: 25% !important;
+  }
+label{
+    margin-left: 17%;
+}
+h4 a{
+  color: #fcfbfb;
+}
+h4 a:hover{
+  color: #fdfdfd;
+}
+input{
+     margin-left: 27%;
+}
+textarea{
+    margin-left: 23%;
+}
+.input-group #image{
+    margin-left: 32%;
+}
+
+.bottomButtons{
+    margin-left: 35%;
+    margin-top: 5%;
+}
+.btnCancel{
+    background-color: #ffffff;
+    border-color: #6c757d;
+    color: #565e64;
+    border-radius: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 0;
+    padding-top: 0;
+    border: 2px solid;
+    font-weight: bold;
+}
+
+.btnSubmit{
+    background-color: #ffffff;
+    border-color: #711717;
+    color: #771717;
+    border-radius: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 0;
+    padding-top: 0;
+    border: 2px solid;
+    font-weight: bold;
+}
+
+.navbarTop {
+    height: 50px !important;
+}
+/* CSS for larger screens */
+@media (min-width: 768px) {
+    .leftContent {
+      order: 1;
+      flex: 1;
+    }
+    .rightContent {
+      order: 2;
+      flex: 2;
+    }
+  }
+  
+  /* CSS for smaller screens */
+  @media (max-width: 767px) {
+    .leftContent {
+      order: 1;
+      flex: 1;
+    }
+    .rightContent {
+      order: 2;
+      flex: 2;
+      
+    }
+    .row {
+      flex-direction: column;
+    }
+  }
+    /* CSS for smaller screens */
+    @media (max-width: 575px) {
+        .leftContent {
+          order: 1;
+          flex: 1;
+          width: 100%;
+        }
+        .rightContent {
+          order: 2;
+          flex: 2;
+        }
+        .row {
+          flex-direction: column;
+        }
+      }
+
+/* Set the background color for the navigation bar */
+.navbar {
+    background-color: #ffffff; /* Replace with your desired background color */
+}
+
+/* Remove background transparency when not collapsed */
+.navbar:not(.show) {
+    background-color: #ffffff; /* Replace with your desired background color */
+}
+
+.help{
+  margin-left: 45%;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+}
+input::file-selector-button {
+  font-weight: bold;
+  color: #fcfbfb;
+  background-color: #711717;
+  padding: 0.5em;
+  border: thin;
+  border-radius: 5px;
+}
+
+
+      
